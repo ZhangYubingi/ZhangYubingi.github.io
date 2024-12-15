@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>欢迎来到张语冰的简历</title>
+        <style>
+            :root {
+                --color-white: #FFFFFF;
+                --color-black: #000000;
+                --color-darkgray: #333333;
+                --color-gray: #5D5D5D;
+                --color-lightgray: #999999;
+                --color-text: var(--color-darkgray);
+                --color-graytext: var(--color-gray);
+                --color-lighttext: var(--color-lightgray);
+                --color-awesome: #DC3522;
+                --font-size-base: 16px;
+                --spacing-unit: 1rem;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Source Sans Pro', sans-serif;
+                font-size: var(--font-size-base);
+                line-height: 1.5;
+                color: var(--color-text);
+                background: var(--color-white);
+                padding: 2rem;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            /* .cv-header {
+                text-align: center;
+                margin-bottom: 2rem;
+            } */
+
+            .cv-name {
+                display: flex;
+                justify-content: center;
+                align-items: baseline;
+                gap: 0.5rem;
+                margin-bottom: 1rem;
+            }
+
+            .firstname {
+                font-size: 2rem;
+                font-weight: 300;
+                color: var(--color-graytext);
+            }
+
+            .lastname {
+                font-size: 2rem;
+                font-weight: 700;
+                color: var(--color-text);
+            }
+
+            .position {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                color: var(--color-awesome);
+                margin-bottom: 0.5rem;
+            }
+
+            .contact-info {
+                font-size: 0.8rem;
+                color: var(--color-lighttext);
+            }
+
+            .section {
+                margin-bottom: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: var(--color-awesome);
+                text-transform: uppercase;
+                margin-bottom: 1rem;
+                position: relative;
+            }
+
+            .section-title::after {
+                content: '';
+                position: absolute;
+                left: 0;
+                bottom: -0.25rem;
+                width: 100%;
+                height: 0.15rem;
+                background-color: var(--color-awesome);
+                opacity: 0.3;
+            }
+
+            .entry {
+                margin-bottom: 1.5rem;
+            }
+
+            .entry-title {
+                font-weight: 700;
+                margin-bottom: 0.25rem;
+            }
+            .entry-title-small {
+                font-weight: 500;
+                margin-bottom: 0.25rem;
+            }
+
+            .entry-info {
+                display: flex;
+                justify-content: space-between;
+                font-size: 0.9rem;
+                color: var(--color-graytext);
+                margin-bottom: 0.5rem;
+            }
+
+            .entry-description {
+                font-size: 0.9rem;
+                color: var(--color-text);
+            }
+
+            @media (max-width: 768px) {
+                body {
+                    padding: 1rem;
+                }
+
+                .entry-info {
+                    flex-direction: column;
+                    gap: 0.25rem;
+                }
+            }
+            .blue-link {
+                color: blue;
+                text-decoration: none; /* 移除下划线 */
+            }
+            .blue-link:hover {
+                text-decoration: underline; /* 悬停时显示下划线 */
+            }
+            .cv-header {
+                text-align: center;
+                margin-bottom: 2rem;
+                position: relative;
+                padding: 1rem;
+            }
+
+            .photo-container {
+                width: 120px;
+                height: 120px;
+                position: absolute;
+                overflow: hidden;
+            }
+
+            .photo-container.left {
+                left: 0;
+            }
+
+            .photo-container.right {
+                right: 0;
+            }
+
+            .photo-container.circle {
+                border-radius: 50%;
+            }
+
+            .photo-container.rectangle {
+                border-radius: 3px;
+            }
+
+            .photo-container.edge {
+                border: 3px solid var(--color-awesome);
+            }
+
+            .photo-container img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            /* Adjust header layout when photo is present */
+            .has-photo {
+                padding-left: 140px; /* When photo is on the left */
+            }
+
+            .has-photo.photo-right {
+                padding-left: 0;
+                padding-right: 140px;
+            }
+
+            @media (max-width: 768px) {
+                .cv-header {
+                    padding: 0;
+                }
+
+                .photo-container {
+                    position: relative;
+                    margin: 0 auto 1rem auto;
+                }
+
+                .has-photo, .has-photo.photo-right {
+                    padding: 0;
+                }
+            }
+        
+            
+        </style>
+    </head>
+    <body>
+        <header class="cv-header">
+            <!-- Photo container with configurable options -->
+            <div class="photo-container left circle edge">
+                <!-- Replace src with actual photo path -->
+                <img src="D:\张语冰证件照.jpeg"/>
+            </div>
+            <div class="cv-name">
+                <span class="firstname">张</span>
+                <span class="lastname">语冰</span>
+            </div>
+            <div class="position">青岛科技大学/环境科学专业/本科</div>
+            <div class="contact-info">
+                📍 山东省青岛市市北区青岛科技大学 • 📱 (+86) 13176686815 • 📧 1332521968@qq.com
+            </div>
+        </header>
+
+        <main>
+            <section class="section">
+                <h2 class="section-title">教育经历</h2>
+                <div class="entry">
+                    <h3 class="entry-title">青岛科技大学（QUST）</h3>
+                    <div class="entry-info">
+                        <span>青岛科技大学/环境科学专业/本科</span>
+                        <span>Qingdao, China, Sep. 2023 - Dec. 2027</span>
+                    </div>
+                    <div class="entry-description">
+                        校级二等奖学金1次；专业排名前10%；平均绩点3.8
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+    <section class="section">
+                <h2 class="section-title">实习经历</h2>
+                <div class="entry">
+                    <h3 class="entry-title">必胜客/服务员</h3>
+                
+                    <div class="entry-description">
+<span>1.客户服务与引导：在繁忙的用餐时段，我作为兼职服务员，主要负责迎接顾客，热情的引导他们落座，并根据顾客要求以及结合其实际情况，合理安排座位，确保顾客满意。
+</span><br>
+<span>2.沟通与交流：具备良好的沟通能力和服务意识，能够主动与顾客交流，了解他们的口味偏好和需求，适时推荐菜品，营造温馨和谐的用餐氛围。同时，我也善于处理顾客反馈，积极协调解决顾客遇到的问题，增强了顾客的满意度和忠诚度。
+</span><br>
+<span>3. 团队协作：在工作中，我积极与同事合作，共同完成餐厅的日常运营任务。无论是准备食材、整理桌面还是协助同事完成其他工作，我都能够尽心尽力，确保餐厅的顺畅运营。
+</span><br>
+<span> 这段在必胜客的兼职经历不仅锻炼了我的沟通能力和服务意识，还让我学会了如何在快节奏的环境中保持高效和专注。我相信这些宝贵的经验将对我未来的职业生涯产生积极的影响。
+                    </span></div>
+                </div>
+            </section>
+
+
+
+            
+
+            <section class="section">
+                <h2 class="section-title">项目经历</h2>
+                <div class="entry">
+                    <h3 class="entry-title">组织期中考试</h3>
+                    <div class="entry-info">
+ <span> 1.负责整个考试项目的策划与协调，明确各项任务分工，将人员合理分配到不同环节。</span><br>
+  <span>2.积极与各科老师沟通联系，确定出题范围和要求，协调监考老师的时间安排。</span>   <br>                  
+<span> 3.精心布置考场，确保环境整洁、座位安排合理，符合考试规范。</span> <br>      
+<span>4.提前完成试题的打印工作，严格把控打印质量和数量，保证试题的保密性. </span>
+<br> <span>5.考试结束后，有序安排学生进行阅卷，制定统一的阅卷标准，监督阅卷过程，确保成绩公正准确。 
+ </span> <br> <br> <br>  <span>通过此次经历，提升了自己的组织能力、沟通能力和问题解决能力，为今后应对复杂工作奠定了基础。                </div>
+                    </span>
+                </div>
+            </section>
+
+               <section class="section">
+                <h2 class="section-title">个人评价</h2>
+                <span>  1.我性格开朗外向，具备良好的沟通能力和团队协作精神，能迅速融入工作团队。对环境科学领域尤其是环境监测工作满怀热情
+                ，专业知识扎实。<br>
+ 
+  2.我擅长体育运动，培养了坚韧的毅力和应对挑战的勇气。喜欢尝试新事物，自学能力强，能快速掌握环境监测相关的新知识和新技能。
+ <br>
+  3.曾在必胜客、方特兼职，积累了一定的实践经验，深知责任与细心的重要性。相信自己能胜任环境监测工程师一职，为环保事业贡献积极力量。</span>
+          </section>
+
+
+
+
+
+    <section class="section">
+                <h2 class="section-title">技能证书</h2>
+           
+                    <div class="entry-description">
+                        <a href="C:\Users\Zhang\Desktop\张语冰\大学英语四级证书.pdf" class="blue-link">[1]</a> 大学英语四级
+                    </div>
+                </div>
+            </section>
+
+
+
+            
+        </main>
+
+    <script>
+    alert('准备好了吗？');
+    </script>
+        
+    </body>
+</html>
